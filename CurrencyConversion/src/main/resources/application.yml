@@ -6,3 +6,4 @@ logging:
     web: DEBUG
 
 
+forex-service.ribbon.listOfServers: localhost:7070, localhost:7071
