@@ -1,9 +1,14 @@
 spring.application.name: currency-conversion-service
-server.port: 8083
+server.port: 9090
 
 logging:
   level:
     web: DEBUG
 
 
-forex-service.ribbon.listOfServers: localhost:7070, localhost:7071
+#forex-service.ribbon.listOfServers: localhost:7070, localhost:7071
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
